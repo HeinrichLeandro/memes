@@ -38,14 +38,14 @@ const Imgmeme = () => {
         <select onChange={seleccionarImg} className="form-select form-select-lg mb-3 w-50 m-auto" aria-label="Default select example">
           <option>Selecciona una imagen</option>
           <option value={6}>Futurama</option>
-          <option value={7}>Bod Esponja</option>
+          <option value={7}>Bob Esponja</option>
           <option value={8}>Señora</option>
           <option value={9}>Calamardo</option>
         </select>   
         
         <figure className='text-center' id='exportar'>
           <p className='mt-5 w-100 px-30 position-absolute top-50 start-30 h1 text-center'>{textomeme}</p>  
-          <img src={`../memesImg/${imgMeme}.png`} className='figure-img mt-3 d-block m-auto' alt='meme'/>
+          <img src={`Imagenes/${imgMeme}.jpg`} className='figure-img mt-3 d-block m-auto' alt='meme'/>
         </figure>
 
         <button onClick={descarga} type='button' className='btn btn-primary mt-5 mb-4'>Descargar meme</button>
