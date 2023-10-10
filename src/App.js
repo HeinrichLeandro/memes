@@ -8,8 +8,7 @@ function App() {
     <div className="App">
     
     <Cookies/>
-    <Imgmeme /> 
-
+    <Imgmeme />
     </div>
   );
 }
