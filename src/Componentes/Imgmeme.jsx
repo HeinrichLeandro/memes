@@ -19,8 +19,8 @@ const Imgmeme = () => {
     }
 
     const descarga = (e) => {
-      html2canvas(document.querySelector("#exportar")).then(function(canvas) {
-        let img = canvas.toDataURL("memesImg/png");
+      html2canvas(document.querySelector("#exportar"), {useCORS: true}).then(function(canvas) {
+        let img = canvas.toDataURL("image/jpeg");
         let link = document.createElement("a");
         link.download = "memepropio.png";
         link.href = img;
@@ -46,7 +46,7 @@ const Imgmeme = () => {
         
         <figure className='text-center' id='exportar'>
           <p className='mt-5 w-100 px-30 position-absolute top-50 start-30 h1 text-center'>{textomeme}</p>  
-          <img src={imgMeme} className='figure-img mt-3 d-block m-auto' alt='meme'/>
+          <img src={imgMeme} id='fondomeme' className='figure-img mt-3 d-block m-auto'/>
         </figure>
 
         <button onClick={descarga} type='button' className='btn btn-primary mt-5 mb-4'>Descargar meme</button>

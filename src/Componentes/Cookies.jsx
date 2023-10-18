@@ -4,7 +4,7 @@ const MySwal = withReactContent(Swal);
 
 const Cookies = () => {
    
-    Swal.fire('Bienvenido, acepta las cookies');
+    Swal.fire('Bienvenido, al entrar en este sitio estas aceptando nuestras cookies');
 
 }
 
