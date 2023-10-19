@@ -6,12 +6,18 @@ const Imgmeme = () => {
   
     const { apiMeme } = useFetch("https://api.imgflip.com/get_memes");
     const [textomeme, setTextomeme] = useState();
+    const [textomeme2, setTextomeme2] = useState();
     const [imgMeme, setImgMeme] = useState();
 
     const textmeme = (e) =>{
         setTextomeme(e.target.value);
         console.log(e.target.value);
     }
+
+    const textmeme2 = (e) =>{
+      setTextomeme2(e.target.value);
+      console.log(e.target.value);
+  }
 
     const seleccionarImg = (e) => {
         setImgMeme(e.target.value);
@@ -34,8 +40,14 @@ const Imgmeme = () => {
         <h1 className='mt-5 mb-3 text-light '>Editá tu propio meme</h1>
 
         <h2 className='mt-2 mb-3'>Escribí tu frase</h2>
-        <input onChange={textmeme} className="form-control w-25 m-auto d-block" type="text" placeholder="Pone tu frase" name="meme"/>
-
+        <div class="form-floating mb-3 w-25 m-auto d-block">
+          <input onChange={textmeme} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
+          <label for="floatingInput">Pone tu frase</label>
+        </div>
+        <div class="form-floating mb-3 w-25 m-auto d-block">
+          <input onChange={textmeme2} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
+          <label for="floatingInput">Pone tu frase</label>
+        </div>
         <h2 className='mt-2 mb-3'>Elegí la imagen para tu meme</h2>
         <select id="contenedor" onChange={seleccionarImg} className="form-select form-select-lg mb-3 w-50 m-auto" aria-label="Default select example">
           <option>Selecciona una imagen</option>
@@ -45,7 +57,8 @@ const Imgmeme = () => {
         </select>   
         
         <figure className='text-center' id='exportar'>
-          <p className='mt-5 w-100 px-30 position-absolute top-50 start-30 h1 text-center'>{textomeme}</p>  
+          <p className='mt-5 w-100 px-30 position-absolute top-50 start-30 h1 text-center'>{textomeme}</p>
+          <p className='mt-5 w-100 px-30 position-absolute top-50 start-30 h1 text-center'>{textomeme2}</p>  
           <img src={imgMeme} id='fondomeme' className='figure-img mt-3 d-block m-auto'/>
         </figure>
 
