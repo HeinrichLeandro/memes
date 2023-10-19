@@ -64,31 +64,31 @@ const Imgmeme = () => {
       <h1 className='mt-5 mb-3 text-light '>Editá tu propio meme</h1>
 
       <h2 className='mt-2 mb-3'>Escribí tu frase</h2>
-      <div class="container">
-      <div class = "row">
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+      <div className="container">
+      <div className= "row">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme} className="form-control" id="floatingInput texto1" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la izquierda</label>
         </div>
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme2} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba al centro</label>
         </div>
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme3} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
       </div>
-      <div class = "row">
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+      <div className= "row">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme4} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo a la izquierda</label>
         </div>
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme5} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo al centro</label>
         </div>
-        <div class="form-floating mb-3 w-25 m-auto d-block">
+        <div className="form-floating mb-3 w-25 m-auto d-block">
           <input onChange={textmeme6} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo a la derecha</label>
         </div>
