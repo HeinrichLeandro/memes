@@ -42,3 +42,13 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.memeImg{
+  width: 800px;
+  height: 800px;
+}
+
+.txtmeme {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
