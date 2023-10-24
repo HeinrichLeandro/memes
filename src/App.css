@@ -4,8 +4,8 @@
 }
 
 body{
-  background-color: #00DBDE;
-  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  background-color: #f6f8f8;
+  background-image: linear-gradient(90deg,#080008 0%, #2792e9 50%, #080008 100%);
 }
 
 .App-logo {
@@ -51,4 +51,51 @@ body{
 .txtmeme {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+}
+
+.contenedorfraces{
+
+  display: grid;
+  grid-template-areas: "ariz arce arde"
+                       "ce1iz cece ce1de"
+                       "ce2iz cece ce2de"
+                       "abiz cece abde"
+                       "abiz abce abde" ;
+  align-content: space-evenly;
+}
+
+.ariz{
+  grid-area: ariz;
+}
+.arce{
+  grid-area: arce;
+}
+.arde{
+  grid-area: arde;
+}
+
+.cece{
+  grid-area: cece;
+}
+.ce1de{
+  grid-area: ce1de;
+}
+.ce1iz{
+  grid-area: ce1iz;
+}
+.ce2de{
+  grid-area: ce2de;
+}
+.ce2iz{
+  grid-area: ce2iz;
+}
+
+.abiz{
+  grid-area: abiz;
+}
+.abce{
+  grid-area: abce;
+}
+.abde{
+  grid-area: abde;
 }
