@@ -99,3 +99,28 @@ body{
 .abde{
   grid-area: abde;
 }
+
+@media (max-width:720px){
+  .txt1{
+    transform: translate(-100px, 0px)!important;
+  }
+
+  .txt2{
+    transform: translate(-100px, 300px)!important;
+  }
+
+  .borra{
+    display: none !important;
+  }
+  .memeImg{
+    width: 400px;
+    height: 400px;
+  }
+  .contenedorfraces{
+
+    display: grid;
+    grid-template-areas: "ariz arce arde"
+                         "ce1iz cece ce1de"
+                         "ce2iz abce ce2de" ;
+  }
+}

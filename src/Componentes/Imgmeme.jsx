@@ -98,7 +98,7 @@ const Imgmeme = () => {
 
 
       <div className="contenedorfraces">
-        <div className="form-floating mb-3 w-250 m-auto d-block ariz">
+        <div className="form-floating mb-3 w-250 m-auto d-block ariz borra">
           <input onChange={textmeme} className="form-control" id="floatingInput texto1" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la izquierda</label>
         </div>
@@ -106,25 +106,25 @@ const Imgmeme = () => {
           <input onChange={textmeme2} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba al centro</label>
         </div>
-        <div className="form-floating mb-3 w-250 m-auto d-block arde">
+        <div className="form-floating mb-3 w-250 m-auto d-block arde borra">
           <input onChange={textmeme3} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
-        <div className="form-floating mb-3 w-250 m-auto d-block ce1iz">
+        <div className="form-floating mb-3 w-250 m-auto d-block ce1iz borra">
           <input onChange={textmeme7} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
-        <div className="form-floating mb-3 w-250 m-auto d-block ce2iz">
+        <div className="form-floating mb-3 w-250 m-auto d-block ce2iz borra">
           <input onChange={textmeme8} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
 
         <figure id='exportar' className='cece'>
           <p className='mt-5 w-100 position-absolute top-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-700px, 0px)`}}>{textomeme}</p>
-          <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-450px, 0px)`}}>{textomeme2}</p>
+          <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme txt1' style={{transform: `translate(-450px, 0px)`}}>{textomeme2}</p>
           <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-200px, 0px)`}}>{textomeme3}</p>
           <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-700px, 650px)`}}>{textomeme4}</p>
-          <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-450px, 650px)`}}>{textomeme5}</p>
+          <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme txt2' style={{transform: `translate(-450px, 650px)`}}>{textomeme5}</p>
           <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-200px, 650px)`}}>{textomeme6}</p>
           <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-700px, 200px)`}}>{textomeme7}</p>
           <p className='mt-5 w-100 position-absolute end-20 start-30 h1 text-light txtmeme' style={{transform: `translate(-700px, 400px)`}}>{textomeme8}</p>
@@ -133,16 +133,16 @@ const Imgmeme = () => {
           <img src={imgMeme} id='fondomeme' className='figure-img mt-3 d-block m-auto memeImg'/>
         </figure>
 
-        <div className="form-floating mb-3 w-250 m-auto d-block ce1de">
+        <div className="form-floating mb-3 w-250 m-auto d-block ce1de borra">
           <input onChange={textmeme9} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
-        <div className="form-floating mb-3 w-250 m-auto d-block ce2de">
+        <div className="form-floating mb-3 w-250 m-auto d-block ce2de borra">
           <input onChange={textmeme10} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frase de arriba a la derecha</label>
         </div>
 
-        <div className="form-floating mb-3 w-250 m-auto d-block abiz">
+        <div className="form-floating mb-3 w-250 m-auto d-block abiz borra">
           <input onChange={textmeme4} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo a la izquierda</label>
         </div>
@@ -150,7 +150,7 @@ const Imgmeme = () => {
           <input onChange={textmeme5} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo al centro</label>
         </div>
-        <div className="form-floating mb-3 w-250 m-auto d-block abde">
+        <div className="form-floating mb-3 w-250 m-auto d-block abde borra">
           <input onChange={textmeme6} className="form-control" id="floatingInput" type="text" placeholder="Pone tu frase" name="meme"/>
           <label for="floatingInput">Frace de abajo a la derecha</label>
         </div>
